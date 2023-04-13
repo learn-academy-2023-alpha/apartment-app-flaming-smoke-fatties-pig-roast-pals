@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ApartmentsNew = () => {
+const ApartmentNew = () => {
   return (
     <div>ApartmentsNew</div>
   )
 }
 
-export default ApartmentsNew
+export default ApartmentNew
