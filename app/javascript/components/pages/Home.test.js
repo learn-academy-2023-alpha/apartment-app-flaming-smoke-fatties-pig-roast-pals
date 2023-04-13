@@ -12,9 +12,14 @@ describe("<Home />", () => {
           <Home />
         </BrowserRouter>
       )
-        const header = screen.getByRole('heading', {
+        const h1 = screen.getByRole('heading', {
         name: /welcome to apartment app/i,
     })
-    expect(header).toBeInTheDocument();
+    expect(h1).toBeInTheDocument();
+
+    const h3 = screen.getByRole('heading', {
+      name: /your one step away from finding your dream apartment/i,
+  })
+  expect(h3).toBeInTheDocument();
     })
 })
