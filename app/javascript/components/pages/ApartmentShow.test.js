@@ -3,7 +3,7 @@ import "@testing-library/jest-dom"
 import { render, screen } from "@testing-library/react"
 import  userEvent  from "@testing-library/user-event"
 import ApartmentShow from "./ApartmentShow"
-import { BrowserRouter, MemoryRouter, Routes, Route } from "react-router-dom"
+import { MemoryRouter, Routes, Route } from "react-router-dom"
 import apartments from "../mockApartments"
 
 const renderShow = () => {
@@ -16,6 +16,9 @@ const renderShow = () => {
     )
 }
 describe("<ApartmentShow />", () => {
+
+  it("renders without crashing", () => {})
+
   it("renders without crashing", () => {
     renderShow()
     const address=screen.getByText(`Address: ${apartments[0].address}`)
